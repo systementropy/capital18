@@ -1,0 +1,115 @@
+	<div class="team-container adls">
+		<div class="tcinner">
+			<div class="topHeaderNew" ng-class="headerActive?'active':'inact'">
+				<h2>Our Team</h2>
+				
+			</div>
+			<div class="teamMainContInnere">
+				<ul class="liLeft{{liLeft}}">
+					<li >
+						<div class="front">
+							<img src="images/puneet.png" alt="">
+							<div class="title">
+								<h2>Puneet Singhvi</h2>
+								<h4>EVP & Head - Corporate Development, Capital18</h4>
+								<button class="mobShow600">READ MORE</button>
+							</div>
+						</div>
+						<div class="back">
+							<div class="backInner">
+								<p>Puneet is leading & overseeing Investments, M&As, Partnerships, Strategic Alliances and Business Development across all media platforms within the <br>Network18 group. <button>READ MORE</button></p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="front">
+							<img src="images/sachin.png" alt="">
+							<div class="title">
+								<h2>Sachin Tagra</h2>
+								<h4>Head, Capital18</h4>
+								<button class="mobShow600">READ MORE</button>
+							</div>
+						</div>
+						<div class="back">
+							<div class="backInner">
+								<p>Sachin has eighteen years of prolific business experiences and deep understanding of consumer, retail and media businesses.
+									<button>READ MORE</button>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li >
+						<div class="front">
+							<img src="images/akash.png" alt="">
+							<div class="title">
+								<h2>Akash Mehta</h2>
+								<h4>Investment Manager, Capital18</h4>
+								<button class="mobShow600">READ MORE</button>
+							</div>
+						</div>
+						<div class="back">
+							<div class="backInner">
+								<p>Akash is passionate about investing in new age business models and emerging technologies. 
+								<button>READ MORE</button></p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+			
+		</div>
+		<footer>
+				<div class="footerIcon">
+					<img src="images/18.png" alt="">
+					<span></span>
+				</div>
+				<div class="finner">
+					<div class="flinks mobHide">
+						<a ng-click="beforeNav()" href="/aboutN18">Network18</a>
+						<a ng-click="beforeNav()" href="/whyCapital18">capital18</a>
+						<a ng-click="beforeNav()" href="/vertical">SECTORS</a>
+						<a ng-click="beforeNav()" href="/client">PORTFOLIO</a>
+						<a ng-click="beforeNav()" href="/team">Team</a>
+						<a ng-click="beforeNav()" href="/contact">contact us</a>
+					</div>
+					<div class="bshare-box mobShow">
+						<div class="inner">
+							<a href="#"><i class="fa fa-linkedin "></i></a>
+							<a href="#"><i class="fa fa-twitter "></i></a>
+							<a href="#"><i class="fa fa-facebook "></i></a>
+						</div>
+					</div>
+					<div class="cright mobHide">© 2015 network18 ALL RIGHTS RESERVED. PRIVACY AND TERMS </div>
+					<p class="mobHide">REGISTERED OFFICE  First Floor, Empire Complex, 414 Senapati Bapat Marg, Lower Parel, Mumbai-400013, Maharashtra <br>
+						Phone: 011 41506112 / 41506114 Fax: 011 41506112 / 41506114</p>
+
+					<p class="mobHide">CORPORATE OFFICE Express Trade Towers, Plot No. 15 & 16, Sector 16A, Noida, Uttar Pradesh 201 301, India. <br>Phone: 0120 - 4341818 / 0120 - 3987777 Fax: 01203053860</p>
+
+
+					<p class="mobShow"><b>REGISTERED OFFICE</b>  First Floor, Empire Complex, 414 Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013<br>
+						Phone: 011 41506112 / 41506114</p>
+
+					<p class="mobShow"><b>CORPORATE OFFICE</b> Express Trade Towers, Plot No. 15 & 16, Sector 16A, Noida, Uttar Pradesh 201301 <br>Phone: 0120 - 4341818 / 0120 - 3987777</p>
+					<p>© 2015 NETWORK18 ALL RIGHTS RESERVED. PRIVACY AND TERMS</p>
+				</div>
+
+			</footer>
+	</div>
+	<script>
+		$(document).ready(function() {
+			$('.comonbox').fadeIn(1000);
+			$(window).unbind('scroll');
+			$(document).unbind("mousewheel DOMMouseScroll MozMousePixelScroll");
+			$('.share-pno').children('.share-box').removeClass('whiten').css({
+				marginBottom: 0,
+			});
+			$('.pno').css({
+				marginBottom: 0,
+			});
+			// setTimeout(function() {
+			// 	$('.tcinner ul li:first-child').animate({'left': 0}, 700);
+			//     $('.tcinner ul li:last-child').animate({'right': 0}, 700);
+			// }, 1100);
+		});
+	</script>

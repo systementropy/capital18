@@ -1,0 +1,144 @@
+<div class="contactMainCont">
+	<div class="slide05 pbottom" style="background: #fbf7f4; min-height: 100vh;">
+		<div class="topHeaderNew" ng-class="headerActive?'active':'inact'">
+			<h2>Contact</h2>
+			<!-- <a href="#" class="pullRight"><img src="images/capital18-slogo.png" alt=""></a> -->
+		</div>
+		<div class="contactBodyCont">
+			<div class="clientInner">
+				<p>We are happy to answer any queries and concerns on how we can help your business scale and progress, You can reach out to us.</p>
+				<div class="contactFormCont">
+					<div class="leftContactCont">
+						<div class="eachContRow">
+							<div class="label mobHide">your name</div>
+							<div class="input">
+								<input class="inputText" type="text" required="required" ng-model="text1">
+								<span ng-class="text1?'actFloat':''" class="label floating-label">your name</span>
+							</div>
+							
+						</div>
+						<div class="eachContRow">
+							<div class="label mobHide">your email</div>
+							<div class="input">
+								<input class="inputText" type="text" required="required" ng-model="text2">
+								<span ng-class="text2?'actFloat':''" class="label floating-label">your email</span>
+							</div>
+							
+						</div>
+						<div class="eachContRow">
+							<div class="label mobHide">your city</div>
+							<div class="input">
+								<input class="inputText" type="text" required="required" ng-model="text3">
+								<span ng-class="text3?'actFloat':''" class="label floating-label">your city</span>
+							</div>
+							
+						</div>
+						<div class="eachContRow mobShow">
+							<div class="label mobHide">your city</div>
+							<div class="input">
+								<input class="inputText" type="text" required="required" ng-model="text4">
+								<span ng-class="text4?'actFloat':''" class="label floating-label">your concern</span>
+							</div>
+							
+						</div>
+						<div class="eachContRow mobHide">
+							<div class="label mobHide">your concern</div>
+							<textarea name="" id="" cols="30" rows="10" ></textarea>
+							
+						</div>
+					</div>
+					<div class="rightContactCont">
+						<div class="rightInner">
+							<div class="eachContRow">
+								<div class="label ">email</div>
+								<div class="input">capital18@nw18.com</div>
+
+							</div>
+							<!-- <div class="eachContRow">
+								<div class="label mobHide">phone</div>
+								<div class="input">+91 9999 9999 999 </div>
+								<div class="label mobShow">phone</div>
+							</div> -->
+							<div class="eachContRow">
+								<div class="label ">on the web</div>
+								<div class="input">
+									
+									<!-- Pinterest  <span>|</span> -->  LinkedIn  <span>|</span>  Twitter
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="submitCont">
+					<button>SUBMIT</button>
+				</div>	
+			</div>
+			
+		</div>
+		<footer>
+				<div class="footerIcon">
+					<img src="images/18.png" alt="">
+					<span></span>
+				</div>
+				<div class="finner">
+					<div class="flinks mobHide">
+						<a ng-click="beforeNav()" href="/aboutN18">Network18</a>
+						<a ng-click="beforeNav()" href="/whyCapital18">capital18</a>
+						<a ng-click="beforeNav()" href="/vertical">SECTORS</a>
+						<a ng-click="beforeNav()" href="/client">PORTFOLIO</a>
+						<a ng-click="beforeNav()" href="/team">Team</a>
+						<a ng-click="beforeNav()" href="/contact">contact us</a>
+					</div>
+					<div class="bshare-box mobShow">
+						<div class="inner">
+							<a href="#"><i class="fa fa-linkedin "></i></a>
+							<a href="#"><i class="fa fa-twitter "></i></a>
+							<a href="#"><i class="fa fa-facebook "></i></a>
+						</div>
+					</div>
+					<div class="cright mobHide">© 2015 network18 ALL RIGHTS RESERVED. PRIVACY AND TERMS </div>
+					<p class="mobHide">REGISTERED OFFICE  First Floor, Empire Complex, 414 Senapati Bapat Marg, Lower Parel, Mumbai-400013, Maharashtra <br>
+						Phone: 011 41506112 / 41506114 Fax: 011 41506112 / 41506114</p>
+
+					<p class="mobHide">CORPORATE OFFICE Express Trade Towers, Plot No. 15 & 16, Sector 16A, Noida, Uttar Pradesh 201 301, India. <br>Phone: 0120 - 4341818 / 0120 - 3987777 Fax: 01203053860</p>
+
+
+					<p class="mobShow"><b>REGISTERED OFFICE</b>  First Floor, Empire Complex, 414 Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013<br>
+						Phone: 011 41506112 / 41506114</p>
+
+					<p class="mobShow"><b>CORPORATE OFFICE</b> Express Trade Towers, Plot No. 15 & 16, Sector 16A, Noida, Uttar Pradesh 201301 <br>Phone: 0120 - 4341818 / 0120 - 3987777</p>
+					<p>© 2015 NETWORK18 ALL RIGHTS RESERVED. PRIVACY AND TERMS</p>
+				</div>
+
+			</footer>
+
+	</div>
+	<!-- <div class="share-pno" style="display: block;">
+		<div class="share-box">
+			<a href="#" class=""><i class="fa fa-facebook"></i></a>
+			<a href="#" class=""><i class="fa fa-twitter"></i></a>
+			<a href="#" class=""><i class="fa fa-linkedin"></i></a>
+		</div>
+		<div class="pno">page  <span>2</span>/7</div>
+	</div> -->
+
+
+
+	
+</div>
+<script>
+	$(document).ready(function() {
+		$('.comonbox').fadeIn(1000);
+		$(window).unbind('scroll');
+		$(document).unbind("mousewheel DOMMouseScroll MozMousePixelScroll");
+		$('.share-pno').children('.share-box').removeClass('whiten').css({
+			marginBottom: 0,
+		});
+		$('.pno').css({
+			marginBottom: 0,
+		});
+		setTimeout(function() {
+			// $('.topHeaderNew').addClass('active');
+		}, 1500);
+	});
+</script>

@@ -1,0 +1,144 @@
+<div class="verticals-container saketvatsa adcls">
+	<div class="slide05 pbottom">
+		<div class="topHeaderNew">
+			<h2>Sectors</h2>
+			<!-- <a href="#" class="pullRight"><img src="images/capital18-slogo.png" alt=""></a> -->
+		</div>
+		<div id="inner-body" style="">
+			<div class="sector18Container">
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/ECOMMERCE.png" alt=""></p>E-Commerce
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/HTAW.png" alt=""></p>Health Tech <br>and Wearables
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/real_estate_ico.png" alt=""></p>Real Estate
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p style="margin: 0 auto;" class="imgRlCont"><img src="images/AUTO.png" alt=""></p>Auto
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/travel.png" alt=""></p>Travel
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/luxury.png" alt=""></p>Luxury
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/BFSI.png" alt=""></p>BFSI & <br>Fin-tech
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/MDCS.png" alt=""></p>Mobile Driven <br>Consumer Services
+					</div>
+					
+				</div>
+				<div class="eachSector">
+					<div class="bgSector"></div>
+					<div class="rl-div">
+						<p class="imgRlCont"><img src="images/ConsumerDurables.png" alt=""></p>Consumer <br>Durables
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="footerIcon">
+			<img src="images/18.png" alt="">
+			<span></span>
+		</div>
+		<div class="finner">
+			<div class="flinks mobHide">
+				<a ng-click="beforeNav()" href="/aboutN18">Network18</a>
+				<a ng-click="beforeNav()" href="/whyCapital18">capital18</a>
+				<a ng-click="beforeNav()" href="/vertical">SECTORS</a>
+				<a ng-click="beforeNav()" href="/client">PORTFOLIO</a>
+				<a ng-click="beforeNav()" href="/team">Team</a>
+				<a ng-click="beforeNav()" href="/contact">contact us</a>
+			</div>
+			<div class="bshare-box mobShow">
+				<div class="inner">
+					<a href="#"><i class="fa fa-linkedin "></i></a>
+					<a href="#"><i class="fa fa-twitter "></i></a>
+					<a href="#"><i class="fa fa-facebook "></i></a>
+				</div>
+			</div>
+			<div class="cright mobHide">© 2015 network18 ALL RIGHTS RESERVED. PRIVACY AND TERMS </div>
+			<p class="mobHide">REGISTERED OFFICE  First Floor, Empire Complex, 414 Senapati Bapat Marg, Lower Parel, Mumbai-400013, Maharashtra <br>
+				Phone: 011 41506112 / 41506114 Fax: 011 41506112 / 41506114</p>
+
+			<p class="mobHide">CORPORATE OFFICE Express Trade Towers, Plot No. 15 & 16, Sector 16A, Noida, Uttar Pradesh 201 301, India. <br>Phone: 0120 - 4341818 / 0120 - 3987777 Fax: 01203053860</p>
+
+
+			<p class="mobShow"><b>REGISTERED OFFICE</b>  First Floor, Empire Complex, 414 Senapati Bapat Marg, Lower Parel, Mumbai, Maharashtra 400013<br>
+				Phone: 011 41506112 / 41506114</p>
+
+			<p class="mobShow"><b>CORPORATE OFFICE</b> Express Trade Towers, Plot No. 15 & 16, Sector 16A, Noida, Uttar Pradesh 201301 <br>Phone: 0120 - 4341818 / 0120 - 3987777</p>
+			<p>© 2015 NETWORK18 ALL RIGHTS RESERVED. PRIVACY AND TERMS</p>
+		</div>
+
+	</footer>
+</div>
+<script>
+	$(document).ready(function() {
+		$('.comonbox').fadeIn(1000);
+		$(window).unbind('scroll');
+		$(document).unbind("mousewheel DOMMouseScroll MozMousePixelScroll");
+		$('.share-pno').children('.share-box').css({
+			marginBottom: 0,
+		});
+		$('.pno').css({
+			marginBottom: 0,
+		});
+		$('.verticals-container').addClass('adcls');
+		$('.pcake-menue-box').addClass('gray');
+		var winH = $(window).height();
+		var winW = $(window).width();
+		if (winW>600) {
+			$('.eachSector').css('height', ($(window).height()-164)/2);	
+		}else {
+			$('.eachSector').css({
+				width: (($(window).width()-10)/2),
+				height: (($(window).width()-10)/2),
+			});
+			$('.sector18Container').append("<div class='after'></div>");
+			$('.sector18Container .after').css({
+				width: (($(window).width()-10)/2),
+				height: (($(window).width()-10)/2),
+			});
+		}
+		
+					
+	});
+</script>
