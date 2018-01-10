@@ -1,0 +1,24 @@
+{
+  "name": "Documents",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular-swipe": "^0.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/systementropy/capital18.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/systementropy/capital18/issues"
+  },
+  "homepage": "https://github.com/systementropy/capital18#readme"
+}
