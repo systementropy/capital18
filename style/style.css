@@ -563,7 +563,7 @@ button#openHeaderText:hover {
     transform: scale(1.2);
     background: #000;
 }
-button.openHeaderText.openHeaderText1 {
+button.openHeaderText.openHeaderText1,button.fixedOpenModalBadge {
     font-size: 44px;
     border-radius: 50%;
     border: 1px solid #FFF;
@@ -578,7 +578,10 @@ button.openHeaderText.openHeaderText1 {
     display: block;
     margin: 40px auto 0;
 }
-button.openHeaderText.openHeaderText1 span {
+button.fixedOpenModalBadge{
+	background: #dc0032;
+}
+button.openHeaderText.openHeaderText1 span,button.fixedOpenModalBadge span {
 	position: relative;
     top: 0px;
     width: 22px;
@@ -588,15 +591,15 @@ button.openHeaderText.openHeaderText1 span {
     left: 10px;
     transition: all 0.4s ease-in-out;
 }
-button.openHeaderText.openHeaderText1 span:last-child{
+button.openHeaderText.openHeaderText1 span:last-child,button.fixedOpenModalBadge span:last-child{
 	transform: rotate(90deg);
 }
 
-button.openHeaderText.openHeaderText1:hover{
+button.openHeaderText.openHeaderText1:hover,button.fixedOpenModalBadge:hover{
 
 	background: #000;
 }
-button.openHeaderText.openHeaderText1:hover {
+button.openHeaderText.openHeaderText1:hover,button.fixedOpenModalBadge:hover {
 	transform: rotate(135deg);
 	color: #000;
 	border: 1px solid #000;
@@ -1165,16 +1168,16 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
 .abtTopSec .nwklist{height: 125px;}
 .abtTopSec .antop-box{ flex-grow: 1; }
 .tcinner{margin:0 auto; font-family: 'Playfair Display', serif}
-.tcinner ul{display: flex; justify-content: space-between;  max-width: 1000px; width:100%;margin:  auto; height: 100%; }
+.tcinner ul{display: flex; justify-content: space-between;  max-width: 1000px; width:100%;margin:  auto; height: 100%; position: relative;}
 .tcinner ul li{
 	position: relative;
-	flex-basis:30%;
+	flex-basis:24%;
 	
 	cursor:pointer;
 	height:100%;
 	overflow: hidden;
-	height: 470px;
-	min-height: 400px;
+	height: 380px;
+	min-height: 380px;
 	
 	transition: all 0.4s ease;
 }
@@ -1256,7 +1259,7 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
     transition: all 0.4s ease-in-out;
     min-width: 100%;
     width: auto;
-    height: 400px;
+    height: 312px;
     max-width: initial;
 }
 .title{
@@ -1282,9 +1285,11 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
 .tcinner ul li:nth-child(1) .title h2{width: 188px;}
 .tcinner ul li:nth-child(2) .title h2{width: 164px;}
 .tcinner ul li:nth-child(3) .title h2{width: 164px;}
+.tcinner ul li:nth-child(4) .title h2{width: 164px;}
 .tcinner ul li:nth-child(1) .title h4{width: 296px;}
 .tcinner ul li:nth-child(2) .title h4{width: 95px;}
 .tcinner ul li:nth-child(3) .title h4{width: 189px;}
+.tcinner ul li:nth-child(4) .title h4{width: 189px;}
 .title h4{
 	font-size: 14px;
 	line-height: 14px;
@@ -1296,6 +1301,25 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
 }
 .tcinner ul li:hover .front h2,.tcinner ul li:hover .front h4{
 	width: 100%;
+}
+.fixedOpenModal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0.9;
+    max-width: 1000px;
+    height: 381px;
+    text-align: center;
+    background: url(../images/bg_team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 80px;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    display: none;
 }
 /*.tcinner ul li:first-child{left:-50%}
  .tcinner ul li:last-child{right:-50%}*/
@@ -2035,6 +2059,7 @@ p.imgRlCont img{
 
 
 @media only screen and (max-width: 1000px) {
+	.fixedOpenModal{height: 400px;font-size: 18px;line-height: 1.4;}
 	.contactBodyCont,.clientBodyCont{
 		max-width: 100%;
 	}
@@ -2167,7 +2192,7 @@ p.imgRlCont img{
 		font-size: 17px;
     	line-height: 1.4;
 	}
-	button.openHeaderText.openHeaderText1 span {
+	button.openHeaderText.openHeaderText1 span{
 	    position: relative;
 	    top: 0px;
 	    width: 16px;
@@ -2177,7 +2202,7 @@ p.imgRlCont img{
 	    left: 7px;
 	    transition: all 0.4s ease-in-out;
 	}
-	button.openHeaderText.openHeaderText1 {
+	button.openHeaderText.openHeaderText1{
 	    font-size: 44px;
 	    border-radius: 50%;
 	    border: 1px solid #FFF;
@@ -2468,8 +2493,9 @@ p.imgRlCont img{
 	}
 	
 	.title{background: rgba(251,247,244,0.9);}
-	.tcinner ul li:nth-child(1) .title h2,.tcinner ul li:nth-child(2) .title h2,.tcinner ul li:nth-child(3) .title h2 {width: 100%}
-	.tcinner ul li:nth-child(1) .title h4,.tcinner ul li:nth-child(2) .title h4,.tcinner ul li:nth-child(3) .title h4 {width: 100%}
+	.tcinner ul li:nth-child(1) .title h2,.tcinner ul li:nth-child(2) .title h2,.tcinner ul li:nth-child(3) .title h2,.tcinner ul li:nth-child(4) .title h2 {width: 100%}
+	.tcinner ul li:nth-child(1) .title h4,.tcinner ul li:nth-child(2) .title h4,.tcinner ul li:nth-child(3) .title h4,.tcinner ul li:nth-child(4) .title h4 {width: 100%}
+
 	.sector18Container{
 		position: relative;
 	}
@@ -2681,6 +2707,15 @@ p.imgRlCont img{
 
 
 @media only screen and (max-width: 600px) {
+	.fixedOpenModal{
+		position: fixed;
+		top: 60px !important;
+		left: 0;
+		padding: 40px;
+		height: 100vh;
+		box-sizing: border-box;
+		font-size: 16px;
+	}
 	.mobShow600{display: block !important;}
 	.slide02 .midbox .logobox{padding-bottom: 14px;}
 	.slide02 .midbox .textbox{width: 76%;margin: 0 auto;padding: 14px 0 0;}
