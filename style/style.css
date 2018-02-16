@@ -2045,18 +2045,7 @@ p.imgRlCont img{
     .whyusbox_l h2 img{max-height: 80px;max-width: 80px;}
 }
 
-
-
-
-
-
-
-
-
-
 .mobShow600{display: none !important;}
-
-
 
 @media only screen and (max-width: 1000px) {
 	.fixedOpenModal{height: 400px;font-size: 18px;line-height: 1.4;}
