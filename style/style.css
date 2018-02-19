@@ -706,17 +706,17 @@ button.openHeaderText.openHeaderText1:hover,button.fixedOpenModalBadge:hover {
 	background-size:cover; 
 	transition:all .7s ease-in-out;
 }
-.slide03 .overbox ul li.slide-one:nth-child(4){background:url(../images/Why-us_renowned.jpg) 0 0 no-repeat;
+.slide03 .overbox ul li.slide-one:nth-child(4){background:url(../images/portfolio_slide.jpg) 0 0 no-repeat;
 	background-attachment:fixed; 
 	background-size:cover; 
 	transition:all .7s ease-in-out;
 }
-.slide03 .overbox ul li.slide-one:nth-child(5){background:url(../images/why_capital_reach.jpg) 0 0 no-repeat;
+.slide03 .overbox ul li.slide-one:nth-child(5){background:url(../images/team_slide.jpg) 0 0 no-repeat;
 	background-attachment:fixed; 
 	background-size:cover; 
 	transition:all .7s ease-in-out;
 }
-.slide03 .overbox ul li.slide-one:nth-child(6){background:url(../images/Why-us_massive.jpg) 0 0 no-repeat;
+.slide03 .overbox ul li.slide-one:nth-child(6){background:url(../images/contact.jpg) 0 0 no-repeat;
 	background-attachment:fixed; 
 	background-size:cover; 
 	transition:all .7s ease-in-out;
@@ -2127,7 +2127,7 @@ p.imgRlCont img{
 		width: 100vw;
 	}
 	.showHdSld ul li .innerbox a{
-		padding: 5px 10px; 
+		padding: 9px 10px 5px 10px; 
 		background: #e81d23; 
 		color: rgba(255,255,255,0.8);
 		display: inline-block;
@@ -2175,7 +2175,10 @@ p.imgRlCont img{
 		    overflow: hidden;
 		    letter-spacing: -1px;
 	}
-	button#openHeaderText{line-height: 1;}
+	button#openHeaderText{
+		line-height: 1;
+		padding: 7px 10px 5px 10px;
+	}
 	
 	.panel.slide03 .contentbox p{
 		font-size: 17px;
@@ -2227,19 +2230,19 @@ p.imgRlCont img{
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide4{
-		background:url('../images/Why-us_renowned.jpg');
+		background:url('../images/portfolio_slide.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide5{
-		background:url('../images/why_capital_reach.jpg');
+		background:url('../images/team_slide.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide6{
-		background:url('../images/Why-us_massive.jpg');
+		background:url('../images/contact.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
@@ -2692,20 +2695,23 @@ p.imgRlCont img{
 	    height: 100%;
 	}
 	#homeContainer.mobShow section.panel{position: static;transform: translate(0,0);opacity: 1;float: left;}
+	.vidBg{
+		display: flex;
+	}
+	.vidBg img{
+		border: none;
+		max-width: 100%;
+		max-height: 100%;
+		width: auto;
+		height: auto;
+		display: block;
+		margin: auto;
+	}
 }
 
 
 
 @media only screen and (max-width: 600px) {
-	.fixedOpenModal{
-		position: fixed;
-		top: 60px !important;
-		left: 0;
-		padding: 40px;
-		height: 100vh;
-		box-sizing: border-box;
-		font-size: 16px;
-	}
 	.mobShow600{display: block !important;}
 	.slide02 .midbox .logobox{padding-bottom: 14px;}
 	.slide02 .midbox .textbox{width: 76%;margin: 0 auto;padding: 14px 0 0;}
