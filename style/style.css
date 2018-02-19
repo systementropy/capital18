@@ -2212,37 +2212,37 @@ p.imgRlCont img{
 	.panel.slide03 .contentbox .innr{margin: auto 30px;}
 
 	#homeContainer .panel.showHdSld ul li.slide1{
-		background:url('../images/Why-us_renowned.jpg');
+		background:url('../images/Why-us_renowned_R.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide2{
-		background:url('../images/why_capital_reach.jpg');
+		background:url('../images/why_capital_reach_R.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide3{
-		background:url('../images/Why-us_massive.jpg');
+		background:url('../images/Why-us_massive_R.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide4{
-		background:url('../images/portfolio_slide.jpg');
+		background:url('../images/portfolio_slide_R.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide5{
-		background:url('../images/team_slide.jpg');
+		background:url('../images/team_slide_R.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
 	}
 	#homeContainer .panel.showHdSld ul li.slide6{
-		background:url('../images/contact.jpg');
+		background:url('../images/contact_R.jpg');
 		background-size:cover; 
 		background-position: center;
 		transition:all .7s ease-in-out;
