@@ -4,11 +4,12 @@
 		<div class="antop-box">
 			<div class="downAniCont mobHide"><img style="filter: invert(100%);" src="images/aerrow.png" alt=""><span>SCROLL</span></div>
 			<div class="downAniCont mobShow"><img src="images/aerrow.png" alt=""><span>SCROLL</span></div>
-			<div class="vidBg">
-				<video muted autoplay="false"  width="100%" id="abtVdBg" class="mobHide">
-					<source src="images/abt_bg.mp4" type="video/mp4">
-				</video>
-				<img src="images/mbAbtBg.png" alt="">
+			<div class="vidBg" style="background: transparent; z-index: 0;pointer-events: none;">
+				<!-- <div id="vdosInt" class="mobHide"></div> -->
+				<div class="vidBGYT mobHide" style="height: {{pHigh}}px;width: {{pWid}}px;">
+					<youtube-video ng-if="enableYT" player-vars="playerVars" player="bestPlayer" video-id="theBestVideo" player-width="'100%'" player-height="'100%'" ></youtube-video>
+				</div>
+				<img src="images/mbAbtBg.png" alt="" class="mobShow">
 			</div>
 			
 		</div>

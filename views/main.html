@@ -2,10 +2,13 @@
 
 	<div class="slide01"><img src="images/CAPITAL18_LOGO.png" alt="" class="capital18" /></div>
 	<div class="vide-box01">
-		<video muted autoplay="false" loop  width="100%" id="vdos">
+		<div id="vdosInt" style="position: absolute;left: 50%; top: 50%; transform: translate(-50%,-50%);z-index: -1;"></div>
+		<!-- <video muted autoplay="false" loop  width="100%" id="vdos">
  			<source src="images/newe_bg.mp4" type="video/mp4">
-  		</video>
-
+  		</video> -->
+		<div class="vidBGYT" style="height: {{pHigh}}px;width: {{pWid}}px;">
+			<youtube-video ng-if="enableYT" player-vars="playerVars" player="bestPlayer" video-id="theBestVideo" player-width="'100%'" player-height="'100%'" ></youtube-video>
+		</div>
 		<div class="slide02">
 
 			<div class="midbox">
@@ -212,15 +215,16 @@
 		}
 		$(window).unbind('scroll');
 		$(document).unbind("mousewheel DOMMouseScroll MozMousePixelScroll");
-		document.querySelector('#vdos').pause();
+		//document.querySelector('#vdos').pause();
 		$('.share-pno').children('.share-box').removeClass('whiten').css({
 			marginBottom: 0,
 		});
 		var currentIndex=1;
 		setTimeout(function(){
+			// console.log('here');
 			$('.slide01').fadeOut(1400);
 			$('.vide-box01').animate({'left': 0}, 500, function(){
-				document.querySelector('#vdos').play();
+				// document.querySelector('#vdos').play();
 				$('.slide02, .comonbox, .shrebox').fadeIn(2000);
 				$('.downAniCont.mobShow').animate({opacity:1}, 2000);
 				if ($(window).width()<1000) {

@@ -1,6 +1,6 @@
 
 var app = angular.module("myApp", 
-      ['ngRoute','slickCarousel','duParallax','swipe']
+      ['ngRoute','slickCarousel','duParallax','swipe','youtube-embed']
    ).config(
       ['$locationProvider','$routeProvider', function($locationProvider,$routeProvider) {
    
@@ -43,7 +43,7 @@ var app = angular.module("myApp",
 }]);
 
 
-app.controller('MainCtrl', ['$rootScope','$scope',function($rootScope,$scope) {
+app.controller('MainCtrl', ['$rootScope','$scope','$window',function($rootScope,$scope,$window) {
    $rootScope.headerShade=true;
    $rootScope.tabNum='tab00';
    $rootScope.showWhich=true;
@@ -76,10 +76,42 @@ app.controller('MainCtrl', ['$rootScope','$scope',function($rootScope,$scope) {
       }
       
    };
+   function init(){
+      $scope.theBestVideo = 'Z_s5jS6amHg';
+      var w = angular.element($window);
+      var wWid=w.width();
+      var wHig=w.height();
+      // console.log(wHig/wWid);
+      if (wHig/wWid>=0.5625) {
+         // var vidHeight= $(window).height(); 
+         // var vidWidth= (vidHeight*16)/9;
+         // $('.videoBg').css('width', vidWidth);  
+         $scope.pHigh=parseInt(wHig);
+         $scope.pWid=parseInt((wWid*16)/9);
+      }else{
+         $scope.pWid=parseInt(w.width());
+         $scope.pHigh=parseInt(((parseInt(w.width())*9)/16));
+      }
+
+      $scope.playerVars = {
+          'autoplay': 1,
+          'controls': 0, 
+          'rel' : 0,
+          'showinfo':0,
+          'fs' : 0,
+          'loop': 1,
+          'mute':1
+      };
+      $scope.enableYT=true;
+      $scope.$on('youtube.player.ended', function ($event, player) {
+        player.playVideo();
+      });
+   };
+   init();
    
 }]);
 
-app.controller('aboutN18Ctrl', ['$rootScope','$scope','parallaxHelper',function($rootScope,$scope,parallaxHelper) {
+app.controller('aboutN18Ctrl', ['$rootScope','$scope','parallaxHelper','$window',function($rootScope,$scope,parallaxHelper,$window) {
    $rootScope.showWhich=false;
    $rootScope.headerShade=true;
    $rootScope.tabNum='tab01';
@@ -90,7 +122,43 @@ app.controller('aboutN18Ctrl', ['$rootScope','$scope','parallaxHelper',function(
       $rootScope.headerShade=false;
       $scope.transY = parallaxHelper.createAnimator(0.4, 30, -10, (0-vOffset));
    }
-   
+   function init(){
+      $scope.theBestVideo = 'fEC3VqzRvwg';
+      var w = angular.element($window);
+      var wWid=w.width();
+      var wHig=w.height();
+      console.log(wHig/wWid);
+      if (wHig/wWid>=0.5625) {
+         // var vidHeight= $(window).height(); 
+         // var vidWidth= (vidHeight*16)/9;
+         // $('.videoBg').css('width', vidWidth);  
+         $scope.pHigh=parseInt(wHig);
+         $scope.pWid=parseInt((wWid*16)/9);
+      }else{
+         $scope.pWid=parseInt(w.width());
+         $scope.pHigh=parseInt(((parseInt(w.width())*9)/16));
+      }
+      // $scope.pWid=parseInt(w.width());
+      // $scope.pHigh=parseInt(((parseInt(w.width())*9)/16));
+
+      $scope.playerVars = {
+          'autoplay': 1,
+          'controls': 0, 
+          'rel' : 0,
+          'showinfo':0,
+          'fs' : 0,
+          'loop': 1,
+          'mute':1
+      };
+      $scope.enableYT=true;
+      $scope.$on('youtube.player.ended', function ($event, player) {
+         player.seekTo(53.8);
+         player.pauseVideo();
+        //player.playVideo();
+      });
+   };
+   init();
+
 }]);
 
 app.controller('verticalCtrl', ['$rootScope','$scope','parallaxHelper',function($rootScope,$scope,parallaxHelper) {
