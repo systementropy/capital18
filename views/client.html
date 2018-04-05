@@ -36,7 +36,7 @@
 					<div class="clImg Topper">
 						
 						<a href="https://www.topperlearning.com/topper-tv" target="_blank" du-parallax y="transY">
-							<img class="mobHide" style="margin-top: 7px;max-width: 68%;" src="images/cl3.png" alt="">
+							<img class="mobHide" style="margin-top: 15px;max-width: 68%;" src="images/cl3.png" alt="">
 							<img du-parallax opacity="ops" y="transY" class="mobShow" style="margin-top: 7px;max-width: 68%;" src="images/cl3.png" alt="">
 						</a>
 						<div class="showOnClientHover mobShow">
@@ -69,8 +69,20 @@
 							</p>
 						</div>
 					</div>
+					<div class="clImg Infibeam">
+						
+						<a href="" target="_blank" du-parallax y="transY">
+							<img class="mobHide" style="max-width: 85%;max-height: 57px;" src="images/infi.png" alt="">
+							<img du-parallax opacity="ops" y="transY" class="mobShow" style="max-width: 85%;max-height: 57px;" src="images/infi.png" alt="">
+						</a>
+						<div class="showOnClientHover mobShow">
+							<p du-parallax y="transY" opacity="ops">
+								Infibeam provides solutions to merchants to build their own online presence and reach consumers beyond a limited geography. They have developed a marketplace business (infibeam.com) and distributed marketplace business (BuildaBazaar) on a software as-a-service (SaaS) model, supported by numerous Value Added Services (VAS). Infibeam powers the online presence for multiple big businesses such as Adani, Amul, idea, hidesign, crossword etc. The company also powers the Government e-marketplace (GeM) portal, which is live and now has 15 states registered. There are nearly 40,000 sellers, nearly 2.5 lakh products and over 950 product categories. Nearly 1.2L orders have been placed and the total order value is around Rs. 21 Bn. The company also has a payments business under CCAvenue. Growing at 3 year CAGR of 70%+ in Net Processing Value (NPV), CC Avenue powers >80% of the ecommerce merchants with estimated FY18 NPV run-rate based on H1 FY18 NPV is Rs. 182 Bn (~US$ 3 Bn) The company aims to start Bharat bill payment system business; it will be a one stop facility for payment of all bills and a big opportunity for CC Avenue.
+							</p>
+						</div>
+					</div>
 				</div>
-				<div class="clntTxtCont mobHide" style=" min-height: 272px;">
+				<div class="clntTxtCont mobHide" style=" min-height: 400px;">
 					<div class="showOnClientHoverMain">
 						<p>
 							Bookmyshow is the Largest Online Ticketing Platform in India with close to occupying 80% market share. It is currently servicing more than 240 cities & 2800 screens. It also manages ticketing as well as on-ground operations for six out of eight IPL Teams.As of March 2015, Bookmyshow.com recorded an average of 42 million visits per month. It sold an average of over 4.5 Million+ tickets per month on bookmyshow.com and its mobile application for, clocking an impressive growth of 60 per cent over previous year. Bookmyshow is also focused on building its mobile strategy and has close to 17+ Million gross downloads with over 50 per cent of sales through the mobile app.
@@ -94,6 +106,11 @@
 					<div class="showOnClientHoverMain">
 						<p>
 							SMC is a diversified Indian financial service institution with primary business in equity and commodity broking services. It is also engaged in distribution, wealth management, insurance broking, financing, institutional trading and advisory, investment banking, NRI and FPI services, real estate advisory and depository services. The Company has a strong reach across 500+ cities in India and abroad. It’s employee base is more than 2,850+ people and serves over 18,00,000 unique clients. SMC is strong in its equity/commodity brokerage services in the north of India and is diversifying its income and profit sources into other revenue streams such as financing and wealth management. In FY17, the PBT contribution of financing business was almost 27%.  
+						</p>
+					</div>
+					<div class="showOnClientHoverMain">
+						<p>
+							Infibeam provides solutions to merchants to build their own online presence and reach consumers beyond a limited geography. They have developed a marketplace business (infibeam.com) and distributed marketplace business (BuildaBazaar) on a software as-a-service (SaaS) model, supported by numerous Value Added Services (VAS). Infibeam powers the online presence for multiple big businesses such as Adani, Amul, idea, hidesign, crossword etc. The company also powers the Government e-marketplace (GeM) portal, which is live and now has 15 states registered. There are nearly 40,000 sellers, nearly 2.5 lakh products and over 950 product categories. Nearly 1.2L orders have been placed and the total order value is around Rs. 21 Bn. The company also has a payments business under CCAvenue. Growing at 3 year CAGR of 70%+ in Net Processing Value (NPV), CC Avenue powers >80% of the ecommerce merchants with estimated FY18 NPV run-rate based on H1 FY18 NPV is Rs. 182 Bn (~US$ 3 Bn) The company aims to start Bharat bill payment system business; it will be a one stop facility for payment of all bills and a big opportunity for CC Avenue.
 						</p>
 					</div>
 				</div>
@@ -148,9 +165,10 @@
 			if ($(window).width()>1000) {
 				$('.clImg:eq(0)').children('a').children('img.mobHide').addClass('animateOnce');
 				$('.clImg:eq(1)').children('a').children('img.mobHide').addClass('animateOnce');
-				$('.clImg:eq(2)').children('a').children('img.mobHide').addClass('animateOnceAlt');
+				$('.clImg:eq(2)').children('a').children('img.mobHide').addClass('animateOnce');
 				$('.clImg:eq(3)').children('a').children('img.mobHide').addClass('animateOnceAlt');
 				$('.clImg:eq(4)').children('a').children('img.mobHide').addClass('animateOnceAlt');
+				$('.clImg:eq(5)').children('a').children('img.mobHide').addClass('animateOnceAlt');
 			}else{
 
 			}
@@ -178,7 +196,10 @@
 				$('.clntTxtCont').children('div:eq(3)').fadeIn(1000);
 			}else if ($(this).hasClass('SMC')) {
 				$('.clntTxtCont').children('div:eq(4)').fadeIn(1000);
+			}else if ($(this).hasClass('Infibeam')) {
+				$('.clntTxtCont').children('div:eq(5)').fadeIn(1000);
 			}
+
 		}).mouseleave(function(event) {
 			$('.showOnClientHoverMain').hide();
 		});;
