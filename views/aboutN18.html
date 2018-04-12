@@ -9,7 +9,7 @@
 				<div class="vidBGYT mobHide" style="height: {{pHigh}}px;width: {{pWid}}px;">
 					<youtube-video ng-if="enableYT" player-vars="playerVars" player="bestPlayer" video-id="theBestVideo" player-width="'100%'" player-height="'100%'" ></youtube-video>
 				</div>
-				<img src="images/mbAbtBg.png" alt="" class="mobShow">
+				<img src="images/680_slide_mobile.png" alt="" class="mobShow">
 			</div>
 			
 		</div>
@@ -18,8 +18,12 @@
 			
 			<div class="overflow" id="a1" style="overflow: hidden">
 				<ul>
-					
-					<li><a href="https://www.cnbc.com/india/" target="_blank"><img  src="images/logo03.png" alt="" /></a></li>
+					<li ng-repeat="each in data">
+						<a href="{{each.href}}" target="_blank">
+							<img  src="{{each.img}}" alt="" class="{{each.class}}" />
+						</a>
+					</li>
+					<!-- <li><a href="https://www.cnbc.com/india/" target="_blank"><img  src="images/logo03.png" alt="" /></a></li>
 					<li><a href="www.moneycontrol.com/cnbctv18" target="_blank"><img src="images/logo06.png" alt="" /></a></li>
 
 					<li><a href="http://hindi.moneycontrol.com/tv/" target="_blank"><img  src="images/logo04.png" alt="" /></a></li>
@@ -29,15 +33,15 @@
 					<li><a href="https://hindi.news18.com/livetv/" target="_blank"><img src="images/logo02.png" alt="" /></a></li>
 
 					
-					<li class="noMarg"><a href="http://www.viacom18.com/colors-bangla-2/"" target="_blank"><img src="images/logoU1.gif" alt="" /></a></li>
-					<li class="noMarg"><a href="http://www.viacom18.com/colors_gujarati" target="_blank"><img src="images/logoU2.gif" alt="" /></a></li>
+					<li class="noMarg"><a href="http://www.viacom18.com/colors-bangla-2/"" target="_blank"><img src="images/News18Bangla.png" alt="" /></a></li>
+					<li class="noMarg"><a href="http://www.viacom18.com/colors_gujarati" target="_blank"><img src="images/News18Gujarati.png" alt="" /></a></li>
 					<li class="noMarg"><a href="https://hindi.news18.com/livetv/etv-haryana/" target="_blank"><img src="images/logoU3.gif" alt="" /></a></li>
-					<li class="noMarg"><a href="http://www.news18odia.com/" target="_blank"><img src="images/logoU4.gif" alt="" /></a></li>
+					<li class="noMarg"><a href="http://www.news18odia.com/" target="_blank"><img src="images/News18Odiya.png" alt="" /></a></li>
 
 					
-					<li><a href="#" target="_blank"><img src="images/logo09.png" alt="" /></a></li>
-					<li><a href="#" target="_blank"><img src="images/logo10.png" alt="" /></a></li>
-					<li><a href="#" target="_blank"><img src="images/logo11.png" alt="" /></a></li>
+					<li><a href="#" target="_blank"><img src="images/News18KannadaLogo.png" alt="" /></a></li>
+					<li><a href="#" target="_blank"><img src="images/NEWS18KeralaLOGO.png" alt="" /></a></li>
+					<li><a href="#" target="_blank"><img src="images/News18TamilnaduLogo.png" alt="" /></a></li>
 			
 
 					<li class="noMarg"><a href="http://www.moneycontrol.com/" target="_blank"><img src="images/logoU5.gif" alt="" /></a></li>
@@ -46,7 +50,7 @@
 					<li class="noMarg"><a href="http://www.forbesindia.com/" target="_blank"><img src="images/logoU8.gif" alt="" /></a></li>
 					<li class="noMarg"><a href="http://overdrive.in/" target="_blank"><img src="images/logoU9.gif" alt="" /></a></li>
 					<li class="noMarg"><a href="www.betterinteriors.in" target="_blank"><img src="images/logoU10.gif" alt="" /></a></li>
-					<li class="noMarg"><a href="http://betterphotography.in/" target="_blank"><img src="images/logoU11.png" alt="" /></a></li>
+					<li class="noMarg"><a href="http://betterphotography.in/" target="_blank"><img src="images/logoU11.png" alt="" /></a></li> -->
 					
 				</ul>
 			</div>
@@ -77,7 +81,7 @@
 						<a href="http://www.moneycontrol.com/tv/" target="_blank"><img src="images/logo05.png" alt="" /></a>
 						<a href="http://www.news18.com/livetv/" target="_blank"><img src="images/logo01.png" alt="" /></a>
 						<a href="https://hindi.news18.com/livetv/" target="_blank"><img src="images/logo02.png" alt="" /></a>
-						<a href="https://hindi.news18.com/livetv/" target="_blank"><img src="images/ETV.gif" alt="" /></a>
+						<a href="https://hindi.news18.com/livetv/" target="_blank"><img src="images/resized/News18_brd.png" alt="" /></a>
 					</div>
 					<div class="abtImgTxt" du-parallax y="transY">TV is one of the most influential medium to reach Indian customers. Pay TV base in India expected to be 175 mnby 2020 with a penetration of 87% of Total TV Households. HD Subscriber base is estimated to double between 2016 to 2020 from 8 Mnto 16 Mn. Network18’s TV properties range across national to regional channels influencing various customer segments across Tier I to Tier III parts of India. </div>
 				</div>
