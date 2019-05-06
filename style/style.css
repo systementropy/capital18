@@ -1235,8 +1235,10 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
 }
 .tcinner ul li:hover .front{
 	text-align: center;
+	border-top: 1px solid rgba(0,0,0,0);
+	border-left: 1px solid rgba(0,0,0,0);
+	border-right: 1px solid rgba(0,0,0,0);
 }
-
 .tcinner ul li:hover .front img{
 	filter: grayscale(100%);
 }
@@ -1256,7 +1258,6 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
     line-height: 20px;
     transition: all 1s ease-in-out;
     overflow: hidden;
-    
 }
 .tcinner ul li .front{
 	background: url(../images/bg_team.jpg);
@@ -1266,6 +1267,9 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
 	position: relative;
 	height: 100%;
 	transition: all 0.4s ease-in-out;
+	border-left: 1px solid rgba(0,0,0,0.1);
+	border-right: 1px solid rgba(0,0,0,0.1);
+	border-top: 1px solid rgba(0,0,0,0.1);    
 }
 .tcinner ul li .front img{
 	position: absolute;
@@ -1285,10 +1289,14 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
 	bottom: 0;
 	background: #fbf7f4;
 	height: 79px;
-	width: 100%;
+	width: 101%;
 	display: block;
 	transition: all 0.4s ease-in-out;
 	text-align: center;
+	z-index: 0;
+	border: 1px solid #fcf7f4;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	transform: translateX(-1px);
 }
 .title h2{
 	font-weight: 400;
@@ -1302,11 +1310,11 @@ footer .finner p{color:#9c9c9c; font-size: 14px; line-height:18px; padding-top:1
 .tcinner ul li:nth-child(1) .title h2{width: 188px;}
 .tcinner ul li:nth-child(2) .title h2{width: 164px;}
 .tcinner ul li:nth-child(3) .title h2{width: 164px;}
-.tcinner ul li:nth-child(4) .title h2{width: 164px;}
+.tcinner ul li:nth-child(4) .title h2{width: 121px;}
 .tcinner ul li:nth-child(1) .title h4{width: 229px;text-align: left;}
 .tcinner ul li:nth-child(2) .title h4{width: 95px;}
 .tcinner ul li:nth-child(3) .title h4{width: 189px;}
-.tcinner ul li:nth-child(4) .title h4{width: 189px;}
+.tcinner ul li:nth-child(4) .title h4{width: 206px;}
 .title h4{
 	font-size: 14px;
 	line-height: 14px;
@@ -2536,11 +2544,18 @@ p.imgRlCont img{
 		font-size: 13px;
 		line-height: 1.2
 	}
+	.network ul li, .nwklist ul li{
+		height: 60px;
+		width: 80px;
+	}
+	.nwklist ul li a{
+		height: 100%;
+	}
 	.network ul, .nwklist ul{
 		height: 59px;
 		display: flex;
 		height: 59px;
-		background: url(../images/banner_new.png);
+		/*background: url(../images/banner_new.png);*/
 		background-size: contain;
 		background-repeat: repeat-x;
 		background-position: left;

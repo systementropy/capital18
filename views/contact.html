@@ -1,3 +1,14 @@
+<style>
+	@media only screen and (max-width: 600px){
+		.contactFormCont>div.rightContactCont {
+		    margin: 0 auto;
+		    width: 150px;
+		    padding: 0;
+		    text-align: center;
+		     display: block; 
+		}
+	}
+</style>
 <div class="contactMainCont">
 	<div class="slide05 pbottom" style="background: #fbf7f4; min-height: 100vh;">
 		<div class="topHeaderNew" ng-class="headerActive?'active':'inact'">
@@ -8,46 +19,52 @@
 			<div class="clientInner">
 				<p>We are happy to answer any queries and messages on how we can help your business scale and progress, You can reach out to us.</p>
 				<div class="contactFormCont">
-					<div class="leftContactCont">
-						<div class="eachContRow">
-							<div class="label mobHide">your name</div>
-							<div class="input">
-								<input class="inputText" type="text" required="required" ng-model="text1">
-								<span ng-class="text1?'actFloat':''" class="label floating-label">your name</span>
+					<!-- <div class="leftContactCont">
+						<form action="mailto:hellblazer.saket@gmail.com" method="post" enctype="text/plain">
+
+							<div class="eachContRow">
+								<div class="label mobHide">your name</div>
+								<div class="input">
+									<input class="inputText" type="text" required="required" ng-model="text1">
+									<span ng-class="text1?'actFloat':''" class="label floating-label">your name</span>
+								</div>
+								
 							</div>
-							
-						</div>
-						<div class="eachContRow">
-							<div class="label mobHide">your email</div>
-							<div class="input">
-								<input class="inputText" type="text" required="required" ng-model="text2">
-								<span ng-class="text2?'actFloat':''" class="label floating-label">your email</span>
+							<div class="eachContRow">
+								<div class="label mobHide">your email</div>
+								<div class="input">
+									<input class="inputText" type="text" required="required" ng-model="text2">
+									<span ng-class="text2?'actFloat':''" class="label floating-label">your email</span>
+								</div>
+								
 							</div>
-							
-						</div>
-						<div class="eachContRow">
-							<div class="label mobHide">your city</div>
-							<div class="input">
-								<input class="inputText" type="text" required="required" ng-model="text3">
-								<span ng-class="text3?'actFloat':''" class="label floating-label">your city</span>
+							<div class="eachContRow">
+								<div class="label mobHide">your city</div>
+								<div class="input">
+									<input class="inputText" type="text" required="required" ng-model="text3">
+									<span ng-class="text3?'actFloat':''" class="label floating-label">your city</span>
+								</div>
+								
 							</div>
-							
-						</div>
-						<div class="eachContRow mobShow">
-							<div class="label mobHide">your city</div>
-							<div class="input">
-								<input class="inputText" type="text" required="required" ng-model="text4">
-								<span ng-class="text4?'actFloat':''" class="label floating-label">your message</span>
+							<div class="eachContRow mobShow">
+								<div class="label mobHide">your city</div>
+								<div class="input">
+									<input class="inputText" type="text" required="required" ng-model="text4">
+									<span ng-class="text4?'actFloat':''" class="label floating-label">your message</span>
+								</div>
+								
 							</div>
-							
-						</div>
-						<div class="eachContRow mobHide">
-							<div class="label mobHide">your message</div>
-							<textarea name="" id="" cols="30" rows="10" ></textarea>
-							
-						</div>
-					</div>
-					<div class="rightContactCont">
+							<div class="eachContRow mobHide">
+								<div class="label mobHide">your message</div>
+								<textarea name="comment" id="" cols="30" rows="10" ></textarea>
+								
+							</div>
+							<div class="submitCont">
+								<button>SUBMIT</button>
+							</div>	
+						</form>
+					</div> -->
+					<div class="rightContactCont" style="padding-left: 0;">
 						<div class="rightInner">
 							<div class="eachContRow">
 								<div class="label ">email</div>
@@ -69,9 +86,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="submitCont">
+				<!-- <div class="submitCont">
 					<button>SUBMIT</button>
-				</div>	
+				</div>	 -->
 			</div>
 			
 		</div>

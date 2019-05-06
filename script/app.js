@@ -77,7 +77,7 @@ app.controller('MainCtrl', ['$rootScope','$scope','$window',function($rootScope,
       
    };
    function init(){
-      $scope.theBestVideo = 'Z_s5jS6amHg';
+      $scope.theBestVideo = 'XJocHoPqtVY';
       var w = angular.element($window);
       var wWid=w.width();
       var wHig=w.height();
